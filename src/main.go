@@ -8,7 +8,8 @@ import (
 )
 
 func main() {
-	listenner,err:=net.Listen("tcp","localhost:1234")
+	fmt.Println("start Listen :1234")
+	listenner,err:=net.Listen("tcp","0.0.0.0:1234")
 	if err != nil {
 		log.Fatal(err)
 	}
