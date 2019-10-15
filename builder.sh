@@ -1,4 +1,6 @@
 #!/bin/bash
+source ~/.bash_profile
+source /etc/profile
 make build
 #rm Dockerfile
 #touch Dockerfile
