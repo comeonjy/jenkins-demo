@@ -1,1 +1,1 @@
-start /b main.exe
+start /b main
