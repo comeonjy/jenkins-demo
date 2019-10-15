@@ -3,4 +3,4 @@ WORKDIR $GOPATH
 COPY ./src $GOPATH
 COPY run.cmd $GOPATH
 RUN go build .
-CMD ["./src.exe"]
+CMD ["src.exe"]
