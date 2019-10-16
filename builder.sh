@@ -1,6 +1,5 @@
 #!/bin/bash
-make gobuild
-
+CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -i -o ./bin/main src/main.go
 rm Dockerfile
 echo -e "FROM golang:latest" >> Dockerfile
 echo -e "WORKDIR /" >> Dockerfile
