@@ -1,8 +1,5 @@
 FROM golang:latest
-WORKDIR $GOPATH
-COPY ./src $GOPATH
-COPY run.cmd $GOPATH
+WORKDIR /
+COPY ./bin/main /
 EXPOSE 1234
-RUN ls
-RUN go build $GOPATH/main.go
 CMD ["./main"]
