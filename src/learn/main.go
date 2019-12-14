@@ -21,7 +21,7 @@ type B struct {
 func (b *B) T3()  {
 	fmt.Println("b t2")
 }
-12
+123
 func main() {
 	b:=&B{}
 	b.BA.T1()
